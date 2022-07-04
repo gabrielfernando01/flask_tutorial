@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>
-    {% if post_id %}
-      Modificando el post {{ post_id }}
-    {% else %}
-      Nuevo post
-    {% endif %}
-  </title>
-</head>
-<body>
-{% if post_id %}
-  Modificando el post {{ post_id }}
-{% else %}
-  Nuevo post
-{% endif %}
-</body>
-</html>
+{% extends "base_template.html" %}
+
+{% block_title %}
+  {% if post_id %}
+    Modificando el post {{ post_id }}
+  {% else %}
+    Nuevo post
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  {% if post_id %}
+    Modificando el post {{ post_id }}
+  {% else %}
+    Nuevo post
+  {% endif %}
+{% endblock %}
