@@ -16,3 +16,7 @@ def show_post(slug):
 @app.route("/admin/post/<int:post_id>/")
 def post_form(post_id=None):
     return render_template("admin/post_form.html", post_id=post_id)
+
+@app.route("/signup/")
+def show_signup_form():
+    return render_template("signup_form.html")
