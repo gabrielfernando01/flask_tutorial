@@ -22,13 +22,8 @@
       <div>
 	{{ form.password.label }}
 	{{ form.password }}<br>
-	{% endfor %}
-      </div>
-      <div>
-	{{ form.password.label }}
-	{{ form.password }}<br>
 	{% for error in form.password.errors %}
-	<span style="color: red;">{{ error }}</span>
+	<span style="color: red;">{{ errorn }}</span>
 	{% endfor %}
       </div>
       <div>
